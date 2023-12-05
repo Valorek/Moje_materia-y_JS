@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Konfigurator</h1>
+
+    <h3>Paleta kolorów twojego samochodu:</h3>
+    <form id="wybor">
+        <input type="radio" name="kolory" id="basic" value=100000 onchange='zmiana()'>Podstawowy
+        <input type="radio" name="kolory" id="zielony"  value=150000 onchange="zmiana()">Zielony
+        <input type="radio" name="kolory" id="fioletowy"  value=120000 onchange="zmiana()">Fioletowy
+        <input type="radio" name="kolory" id="niebieski" value=160000 onchange="zmiana()">Niebieski
+    </form>
+    <h3>Dodatkowe wyposażenie:</h3>
+    <form id="dodatki">
+        <input type="checkbox" name="akcesoria" id="silnik" value=50000 onchange="price()">Silnik
+        <input type="checkbox" name="akcesoria" id="podgrzewanie" value=10000 onchange="price()">Podgrzewane fotele
+        <input type="checkbox" name="akcesoria" id="dach" value=15000 onchange="price()">Szyberdach
+        <input type="checkbox" name="akcesoria" id="felgi" value=30000 onchange="price()">Felgi
+
+
+    </form>
+    <h4>Twój samochód:</h4>
+    <div id="wypluwacz"></div>
+    <h4>Cena:</h4>
+    <div id="cena"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
