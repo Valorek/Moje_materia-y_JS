@@ -9,19 +9,18 @@ tablica=[
 //   tablica[2].push({key:"cc",value:"1"})
 let i = 0;
 let tab;
-
+tab2={}
 rekurencja(tablica);
 
 function rekurencja(tab) {
-    i++;
-
-    // Warunek zakończenia rekurencji
-    if (tab === undefined || i >= tab.length) {
+    if (tab === undefined) {
         return;
     } else {
-        // Dostęp do elementu tablicy
-        tab2 = tab[i];
-        console.table(tab2);
-        rekurencja(tab2);
+        i++
+        tab2[i]={key:'a'+1,value:tab[i]}
+        rekurencja(tab[i]);
     }
 }
+console.log(tab2)
+
+//   console.table(tablica)
